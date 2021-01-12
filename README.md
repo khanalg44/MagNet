@@ -6,5 +6,9 @@ Your only job is to replace the function predict_dst in benchmark/predict.py wit
 
 
 ## Resources
+- [DrivenData Git](https://github.com/drivendataorg/noaa-runtime)
 - [DrivenData Website](https://www.drivendata.org/competitions/73/noaa-magnetic-forecasting/?fbclid=IwAR3lxCtsCLppvv9ooV36QJCWkP4_g8UT6MwX-TVllWSPQ97zlzEKQpSceHI)
+
+- https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/ 
 - [blog on multivariate time series forecasting](https://towardsdatascience.com/simple-multivariate-time-series-forecasting-7fa0e05579b2)
+- https://github.com/Pythonyatra/MagNet
