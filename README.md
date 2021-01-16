@@ -12,3 +12,4 @@ Your only job is to replace the function predict_dst in benchmark/predict.py wit
 - https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/ 
 - [blog on multivariate time series forecasting](https://towardsdatascience.com/simple-multivariate-time-series-forecasting-7fa0e05579b2)
 - https://github.com/Pythonyatra/MagNet
+- [VAR Tutorial](https://www.machinelearningplus.com/time-series/vector-autoregression-examples-python/)
