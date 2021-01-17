@@ -6,6 +6,7 @@ Your only job is to replace the function predict_dst in benchmark/predict.py wit
 
 
 ## Resources
+- [Benchmark submission](https://www.drivendata.co/blog/model-geomagnetic-field-benchmark/)
 - [DrivenData Git](https://github.com/drivendataorg/noaa-runtime)
 - [DrivenData Website](https://www.drivendata.org/competitions/73/noaa-magnetic-forecasting/?fbclid=IwAR3lxCtsCLppvv9ooV36QJCWkP4_g8UT6MwX-TVllWSPQ97zlzEKQpSceHI)
 - https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/ 
