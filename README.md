@@ -24,14 +24,14 @@ The goal of this challenge is to develop models for forecasting Dst (Disturbance
 
 ## Model sample
 
-![LSTM Model]('images/model_sample.png')
+![LSTM Model](images/model_sample.png)
 
 ## Loss plot and Accuracy
-![Loss plot]('images/loss_plot.png')
+![Loss plot](images/loss_plot.png)
 
 ## Our Performance
-![Final Performance]('images/final_performance.png')
-![Quick Facts](images/total_participants.png')
+![Final Performance](images/final_performance.png)
+![Quick Facts](images/total_participants.png)
 
 
 
