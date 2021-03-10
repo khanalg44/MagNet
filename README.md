@@ -1,6 +1,6 @@
 # MagNet: Model the Geomagnetic Field
 
-## Team Members: [Ghanashyam Khanal](https://www.linkedin.com/in/ghanashyam-khanal/), [Nabin Malakar] (https://www.linkedin.com/in/nabinkm/), [Shovit Bhari](https://www.linkedin.com/in/shovitraj/), [Shree K Bhattrai](https://www.linkedin.com/in/shree-k-bhattarai-92625316/)
+- Team Members: [Ghanashyam Khanal](https://www.linkedin.com/in/ghanashyam-khanal/), [Nabin Malakar](https://www.linkedin.com/in/nabinkm/), [Shovit Bhari](https://www.linkedin.com/in/shovitraj/) and [Shree K Bhattrai](https://www.linkedin.com/in/shree-k-bhattarai-92625316/).
 
 ## Problem Description
 The goal of this challenge is to develop models for forecasting Dst (Disturbance Storm-Time Index) that 1) push the boundary of predictive performance 2) under operationally viable constraints 3) using specified real-time solar-wind data feeds. 
