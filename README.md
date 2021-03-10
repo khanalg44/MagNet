@@ -22,17 +22,20 @@ The goal of this challenge is to develop models for forecasting Dst (Disturbance
     - Add batch normalization, it didn't improve the result
     - with or without activation function - tried Relu, sigmoid. Relu didn't improve the results 
 
-## Model sample
+Following is a screenshot of one of the model architecture.
 
 ![LSTM Model](images/model_sample.png)
 
 ## Loss plot and Accuracy
+Following is the loss plot for train data (blue curve) and validation data (ornage curve) for one of our best models.
 ![Loss plot](images/loss_plot.png)
 
 ## Our Performance
+Our final performance was inside top 50 submitted by Shree Bhattrai.
 ![Final Performance](images/final_performance.png)
-![Quick Facts](images/total_participants.png)
 
+Here is a quick fact about total participants.
+![Quick Facts](images/total_participants.png)
 
 
 ## Resources
