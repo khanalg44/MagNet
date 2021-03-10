@@ -31,7 +31,7 @@ Following is the loss plot for train data (blue curve) and validation data (orna
 ![Loss plot](images/loss_plot.png)
 
 ## Our Performance
-Our final performance was inside top 50 submitted by Shree Bhattrai.
+Our final performance was inside top 50 (top 8%) submitted by Shree Bhattrai.
 ![Final Performance](images/final_performance.png)
 
 Here is a quick fact about total participants.
