@@ -1,0 +1,43 @@
+step1 
+CREATE CONSTRAINT ON (n:Name) ASSERT n.Name is UNIQUE;
+LOAD CSV WITH HEADERS FROM 'file:///neo4j_nodes.csv' AS row
+CREATE (m:Name {Name: row.Name,
+				age : row.Age,
+                sex : row.Sex
+                 });
+LOAD CSV WITH HEADERS FROM 'file:///neo4j_edges.csv' AS row
+//look up the two nodes we want to connect to
+MATCH (n1:Name {Name:row.Name1}),(n2: Name {Name:row.Name2})
+CREATE (n1) -[:RELATED_TO {dist:row.Relationship}] -> (n2);
+
+step2
+Match (n) Return (n)
+
+step3
+Match (n1: Name)  -- (n2: Name) Return n1,n2 Limit 10
+
+step4
+MATCH (n:Name) RETURN n LIMIT 25
+
+step5
+:param limit => ( 42);
+:param config => ({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'REVERSE',
+      properties: {}
+    }
+  },
+  relationshipWeightProperty: null
+});
+:param communityNodeLimit => ( 10);
+
+
+step 6:
+CALL gds.alpha.degree.stream($config) YIELD nodeId, score
+WITH gds.util.asNode(nodeId) AS node, score
+RETURN node, score
+ORDER BY score DESC
+LIMIT toInteger($limit);
