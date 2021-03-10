@@ -1,20 +1,38 @@
-# Weather Forecasting
+# MagNet: Model the Geomagnetic Field
 
-Job is to write a function that can take seven days of data and make predictions with no additional context.
+## Team Members: [Ghanashyam Khanal](https://www.linkedin.com/in/ghanashyam-khanal/), [Nabin Malakar] (https://www.linkedin.com/in/nabinkm/), [Shovit Bhari](https://www.linkedin.com/in/shovitraj/), [Shree K Bhattrai](https://www.linkedin.com/in/shree-k-bhattarai-92625316/)
 
-Your only job is to replace the function predict_dst in benchmark/predict.py with logic that will take seven days worth of data (see the docstring) and output two predictions: one for the current hour (t0) and one for the next hour. See the extensive description on the code submission page.
+## Problem Description
+The goal of this challenge is to develop models for forecasting Dst (Disturbance Storm-Time Index) that 1) push the boundary of predictive performance 2) under operationally viable constraints 3) using specified real-time solar-wind data feeds. 
 
 ## Data Preprocessing
-- We picked only a few features for the LSTM model.
-- converted the data to hourly resulution taking mean and std.
-- Used Standard Scaler to scale the data
+- Feature Engineering:
+    - Using our knowledge from Geo physics we dropped a few features which were very unlikely to affect the final prediction and picked only a few features for the LSTM model. 
+- Data amputation:
+    - Filled the missing data in `smoothed_ssn` using `forward fill` and `solar_wind` using `interpolation`
+    - Converted the data to hourly resolution picking both mean as well as the standard deviation.
 
-### Model Building - LSTM
+- Feature Scaling:
+    - Used Standard Scaler to scale the data. This turned out to be pretty important for accuracy score.
+
+## Model Building - LSTM
 - Tried several things
     - play with batch_size
     - with or without the dropout (with dropout gave better RMSE)
     - Add batch normalization, it didn't improve the result
     - with or without activation function - tried Relu, sigmoid. Relu didn't improve the results 
+
+## Model sample
+
+![LSTM Model]('images/model_sample.png')
+
+## Loss plot and Accuracy
+![Loss plot]('images/loss_plot.png')
+
+## Our Performance
+![Final Performance]('images/final_performance.png')
+![Quick Facts](images/total_participants.png')
+
 
 
 ## Resources
